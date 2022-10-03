@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<title>Note Box</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Note Box" />
+<meta name="date" content="2022-10-02 05:06" />
+<meta name="version" content="1.0.0" />
+<meta name="copyright" content="Copyright 2022 LaminApp" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/nzAnimate.min.css">
+<link rel="stylesheet" href="css/neoapp-ui.min.css">
+<meta name="description" content="Note Box is a simple text editor for smartphone and PC. Decode everthing or make texts simpleform. Note Box is one of our many services in ToolBox. Launch Note Box from LaminApp.">
+<meta name="robots" content="index, follow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="img/icon-512x512.png" />
+</head>
+<body id="ng-app" ng-app="NeoApp" ng-cloak>
+<div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
+<script type="text/ng-template" id="App">
+<div id="App">
+<timer id="App_LoadingOut" interval="1000"></timer>
+<div id="App_BodyContainer" class="[NAB.App_BodyContainer_effect]" ng-style="NAB.App_BodyContainer_style" ng-hide="NAB.App_BodyContainer_hidden" ng-disabled="NAB.App_BodyContainer_disabled">
+<div id="App_Container" class="[NAB.App_Container_effect]" ng-style="NAB.App_Container_style" ng-hide="NAB.App_Container_hidden" ng-disabled="NAB.App_Container_disabled">
+<textarea id="App_Text" class="form-control [NAB.App_Text_effect]" ng-style="NAB.App_Text_style" ng-hide="NAB.App_Text_hidden" ng-disabled="NAB.App_Text_disabled" ng-model="$root.App_Text" ng-change="App_Text_change()"></textarea>
+<div id="App_Contex_BodyContainer" class="[NAB.App_Contex_BodyContainer_effect]" ng-style="NAB.App_Contex_BodyContainer_style" ng-hide="NAB.App_Contex_BodyContainer_hidden" ng-disabled="NAB.App_Contex_BodyContainer_disabled">
+<div id="App_Contex_Container" class="[NAB.App_Contex_Container_effect]" ng-style="NAB.App_Contex_Container_style" ng-hide="NAB.App_Contex_Container_hidden" ng-disabled="NAB.App_Contex_Container_disabled">
+<div id="App_Operator1_Container" class="[NAB.App_Operator1_Container_effect]" ng-style="NAB.App_Operator1_Container_style" ng-hide="NAB.App_Operator1_Container_hidden" ng-disabled="NAB.App_Operator1_Container_disabled" ng-click="App_Operator1_Container_click()">
+<h4 id="App_Operator1_Text" class="Font [NAB.App_Operator1_Text_effect]" ng-style="NAB.App_Operator1_Text_style" ng-hide="NAB.App_Operator1_Text_hidden" ng-disabled="NAB.App_Operator1_Text_disabled">Cut</h4>
+</div>
+<div id="App_Operator2_Container" class="[NAB.App_Operator2_Container_effect]" ng-style="NAB.App_Operator2_Container_style" ng-hide="NAB.App_Operator2_Container_hidden" ng-disabled="NAB.App_Operator2_Container_disabled" ng-click="App_Operator2_Container_click()">
+<h4 id="App_Operator2_Text" class="Font [NAB.App_Operator2_Text_effect]" ng-style="NAB.App_Operator2_Text_style" ng-hide="NAB.App_Operator2_Text_hidden" ng-disabled="NAB.App_Operator2_Text_disabled">Copy</h4>
+</div>
+<div id="App_Operator3_Container" class="[NAB.App_Operator3_Container_effect]" ng-style="NAB.App_Operator3_Container_style" ng-hide="NAB.App_Operator3_Container_hidden" ng-disabled="NAB.App_Operator3_Container_disabled" ng-click="App_Operator3_Container_click()">
+<h4 id="App_Operator3_Text" class="Font [NAB.App_Operator3_Text_effect]" ng-style="NAB.App_Operator3_Text_style" ng-hide="NAB.App_Operator3_Text_hidden" ng-disabled="NAB.App_Operator3_Text_disabled">Paste</h4>
+</div>
+<div id="App_Operator4_Container" class="[NAB.App_Operator4_Container_effect]" ng-style="NAB.App_Operator4_Container_style" ng-hide="NAB.App_Operator4_Container_hidden" ng-disabled="NAB.App_Operator4_Container_disabled" ng-click="App_Operator4_Container_click()">
+<h4 id="App_Operator4_Text" class="Font [NAB.App_Operator4_Text_effect]" ng-style="NAB.App_Operator4_Text_style" ng-hide="NAB.App_Operator4_Text_hidden" ng-disabled="NAB.App_Operator4_Text_disabled">Clear all</h4>
+</div>
+<svg id="Line1" class="[NAB.Line1_effect]" ng-style="NAB.Line1_style" ng-hide="NAB.Line1_hidden" ng-disabled="NAB.Line1_disabled"><line x1="0" y1="0" x2="208" y2="0" /></svg>
+<div id="App_Operator5_Container" class="[NAB.App_Operator5_Container_effect]" ng-style="NAB.App_Operator5_Container_style" ng-hide="NAB.App_Operator5_Container_hidden" ng-disabled="NAB.App_Operator5_Container_disabled" ng-click="App_Operator5_Container_click()">
+<h4 id="App_Operator5_Text" class="Font [NAB.App_Operator5_Text_effect]" ng-style="NAB.App_Operator5_Text_style" ng-hide="NAB.App_Operator5_Text_hidden" ng-disabled="NAB.App_Operator5_Text_disabled">Right-to-left reading order</h4>
+</div>
+<div id="App_Operator6_Container" class="[NAB.App_Operator6_Container_effect]" ng-style="NAB.App_Operator6_Container_style" ng-hide="NAB.App_Operator6_Container_hidden" ng-disabled="NAB.App_Operator6_Container_disabled" ng-click="App_Operator6_Container_click()">
+<h4 id="App_Operator6_Text" class="Font [NAB.App_Operator6_Text_effect]" ng-style="NAB.App_Operator6_Text_style" ng-hide="NAB.App_Operator6_Text_hidden" ng-disabled="NAB.App_Operator6_Text_disabled">Left-to-right reading order</h4>
+</div>
+<svg id="Line2" class="[NAB.Line2_effect]" ng-style="NAB.Line2_style" ng-hide="NAB.Line2_hidden" ng-disabled="NAB.Line2_disabled"><line x1="0" y1="0" x2="208" y2="0" /></svg>
+<div id="App_Operator7_Container" class="[NAB.App_Operator7_Container_effect]" ng-style="NAB.App_Operator7_Container_style" ng-hide="NAB.App_Operator7_Container_hidden" ng-disabled="NAB.App_Operator7_Container_disabled" ng-click="App_Operator7_Container_click()">
+<h4 id="App_Operator7_Text" class="Font [NAB.App_Operator7_Text_effect]" ng-style="NAB.App_Operator7_Text_style" ng-hide="NAB.App_Operator7_Text_hidden" ng-disabled="NAB.App_Operator7_Text_disabled">Convert text to unicode</h4>
+</div>
+<div id="App_Operator8_Container" class="[NAB.App_Operator8_Container_effect]" ng-style="NAB.App_Operator8_Container_style" ng-hide="NAB.App_Operator8_Container_hidden" ng-disabled="NAB.App_Operator8_Container_disabled" ng-click="App_Operator8_Container_click()">
+<h4 id="App_Operator8_Text" class="Font [NAB.App_Operator8_Text_effect]" ng-style="NAB.App_Operator8_Text_style" ng-hide="NAB.App_Operator8_Text_hidden" ng-disabled="NAB.App_Operator8_Text_disabled">Convert unicode to text</h4>
+</div>
+</div>
+<div id="App_More_Container" class="[NAB.App_More_Container_effect]" ng-style="NAB.App_More_Container_style" ng-hide="NAB.App_More_Container_hidden" ng-disabled="NAB.App_More_Container_disabled">
+<div id="App_More_HiddenRoom" class="[NAB.App_More_HiddenRoom_effect]" ng-style="NAB.App_More_HiddenRoom_style" ng-hide="NAB.App_More_HiddenRoom_hidden" ng-disabled="NAB.App_More_HiddenRoom_disabled" ng-click="App_More_HiddenRoom_click()">
+</div>
+<div id="App_More_AboutUs_ButtonContainer" class="[NAB.App_More_AboutUs_ButtonContainer_effect]" ng-style="NAB.App_More_AboutUs_ButtonContainer_style" ng-hide="NAB.App_More_AboutUs_ButtonContainer_hidden" ng-disabled="NAB.App_More_AboutUs_ButtonContainer_disabled" ng-click="App_More_AboutUs_ButtonContainer_click()">
+<h5 id="App_More_AboutUs_ButtonText" class="Font [NAB.App_More_AboutUs_ButtonText_effect]" ng-style="NAB.App_More_AboutUs_ButtonText_style" ng-hide="NAB.App_More_AboutUs_ButtonText_hidden" ng-disabled="NAB.App_More_AboutUs_ButtonText_disabled">About us</h5>
+</div>
+<div id="App_More_Github_ButtonContainer" class="[NAB.App_More_Github_ButtonContainer_effect]" ng-style="NAB.App_More_Github_ButtonContainer_style" ng-hide="NAB.App_More_Github_ButtonContainer_hidden" ng-disabled="NAB.App_More_Github_ButtonContainer_disabled" ng-click="App_More_Github_ButtonContainer_click()">
+<h5 id="App_More_Github_ButtonText" class="Font [NAB.App_More_Github_ButtonText_effect]" ng-style="NAB.App_More_Github_ButtonText_style" ng-hide="NAB.App_More_Github_ButtonText_hidden" ng-disabled="NAB.App_More_Github_ButtonText_disabled">GitHub</h5>
+</div>
+</div>
+</div>
+<div id="App_Footer_Container" class="[NAB.App_Footer_Container_effect]" ng-style="NAB.App_Footer_Container_style" ng-hide="NAB.App_Footer_Container_hidden" ng-disabled="NAB.App_Footer_Container_disabled">
+<h5 id="App_Footer_Char_Counter" class="Font [NAB.App_Footer_Char_Counter_effect]" ng-style="NAB.App_Footer_Char_Counter_style" ng-hide="NAB.App_Footer_Char_Counter_hidden" ng-disabled="NAB.App_Footer_Char_Counter_disabled">Char: [App_Text_Len]</h5>
+<div id="App_Footer_New_ButtonContainer" class="[NAB.App_Footer_New_ButtonContainer_effect]" ng-style="NAB.App_Footer_New_ButtonContainer_style" ng-hide="NAB.App_Footer_New_ButtonContainer_hidden" ng-disabled="NAB.App_Footer_New_ButtonContainer_disabled" ng-click="App_Footer_New_ButtonContainer_click()">
+<img id="App_Footer_New_ButtonIMG" alt="" ng-src="img/New.svg" class="[NAB.App_Footer_New_ButtonIMG_effect]" ng-style="NAB.App_Footer_New_ButtonIMG_style" ng-hide="NAB.App_Footer_New_ButtonIMG_hidden" ng-disabled="NAB.App_Footer_New_ButtonIMG_disabled">
+<h5 id="App_Footer_New_ButtonText" class="Font [NAB.App_Footer_New_ButtonText_effect]" ng-style="NAB.App_Footer_New_ButtonText_style" ng-hide="NAB.App_Footer_New_ButtonText_hidden" ng-disabled="NAB.App_Footer_New_ButtonText_disabled">New</h5>
+</div>
+<div id="App_Footer_Open_ButtonContainer" class="[NAB.App_Footer_Open_ButtonContainer_effect]" ng-style="NAB.App_Footer_Open_ButtonContainer_style" ng-hide="NAB.App_Footer_Open_ButtonContainer_hidden" ng-disabled="NAB.App_Footer_Open_ButtonContainer_disabled" ng-click="App_Footer_Open_ButtonContainer_click()">
+<img id="App_Footer_Open_ButtonIMG" alt="" ng-src="img/Open.svg" class="[NAB.App_Footer_Open_ButtonIMG_effect]" ng-style="NAB.App_Footer_Open_ButtonIMG_style" ng-hide="NAB.App_Footer_Open_ButtonIMG_hidden" ng-disabled="NAB.App_Footer_Open_ButtonIMG_disabled">
+<h5 id="App_Footer_Open_ButtonText" class="Font [NAB.App_Footer_Open_ButtonText_effect]" ng-style="NAB.App_Footer_Open_ButtonText_style" ng-hide="NAB.App_Footer_Open_ButtonText_hidden" ng-disabled="NAB.App_Footer_Open_ButtonText_disabled">Open</h5>
+</div>
+<div id="App_Footer_URLImport_ButtonContainer" class="[NAB.App_Footer_URLImport_ButtonContainer_effect]" ng-style="NAB.App_Footer_URLImport_ButtonContainer_style" ng-hide="NAB.App_Footer_URLImport_ButtonContainer_hidden" ng-disabled="NAB.App_Footer_URLImport_ButtonContainer_disabled" ng-click="App_Footer_URLImport_ButtonContainer_click()">
+<img id="App_Footer_URLImport_ButtonIMG" alt="" ng-src="img/Cloud_Upload.svg" class="[NAB.App_Footer_URLImport_ButtonIMG_effect]" ng-style="NAB.App_Footer_URLImport_ButtonIMG_style" ng-hide="NAB.App_Footer_URLImport_ButtonIMG_hidden" ng-disabled="NAB.App_Footer_URLImport_ButtonIMG_disabled">
+<h5 id="App_Footer_URLImport_ButtonText" class="Font [NAB.App_Footer_URLImport_ButtonText_effect]" ng-style="NAB.App_Footer_URLImport_ButtonText_style" ng-hide="NAB.App_Footer_URLImport_ButtonText_hidden" ng-disabled="NAB.App_Footer_URLImport_ButtonText_disabled">Import from URL</h5>
+</div>
+<div id="App_Footer_Save_ButtonContainer" class="[NAB.App_Footer_Save_ButtonContainer_effect]" ng-style="NAB.App_Footer_Save_ButtonContainer_style" ng-hide="NAB.App_Footer_Save_ButtonContainer_hidden" ng-disabled="NAB.App_Footer_Save_ButtonContainer_disabled" ng-click="App_Footer_Save_ButtonContainer_click()">
+<img id="App_Footer_Save_ButtonIMG" alt="" ng-src="img/Save.svg" class="[NAB.App_Footer_Save_ButtonIMG_effect]" ng-style="NAB.App_Footer_Save_ButtonIMG_style" ng-hide="NAB.App_Footer_Save_ButtonIMG_hidden" ng-disabled="NAB.App_Footer_Save_ButtonIMG_disabled">
+<h5 id="App_Footer_Save_ButtonText" class="Font [NAB.App_Footer_Save_ButtonText_effect]" ng-style="NAB.App_Footer_Save_ButtonText_style" ng-hide="NAB.App_Footer_Save_ButtonText_hidden" ng-disabled="NAB.App_Footer_Save_ButtonText_disabled">Save</h5>
+</div>
+<div id="App_Footer_More_ButtonContainer" class="[NAB.App_Footer_More_ButtonContainer_effect]" ng-style="NAB.App_Footer_More_ButtonContainer_style" ng-hide="NAB.App_Footer_More_ButtonContainer_hidden" ng-disabled="NAB.App_Footer_More_ButtonContainer_disabled" ng-click="App_Footer_More_ButtonContainer_click()">
+<h3 id="App_Footer_More_ButtonText" class="Font [NAB.App_Footer_More_ButtonText_effect]" ng-style="NAB.App_Footer_More_ButtonText_style" ng-hide="NAB.App_Footer_More_ButtonText_hidden" ng-disabled="NAB.App_Footer_More_ButtonText_disabled">...</h3>
+</div>
+<div id="App_Footer_HideMore_ButtonContainer" class="[NAB.App_Footer_HideMore_ButtonContainer_effect]" ng-style="NAB.App_Footer_HideMore_ButtonContainer_style" ng-hide="NAB.App_Footer_HideMore_ButtonContainer_hidden" ng-disabled="NAB.App_Footer_HideMore_ButtonContainer_disabled" ng-click="App_Footer_HideMore_ButtonContainer_click()">
+<img id="App_Footer_HideMore_ButtonIMG" alt="" ng-src="img/down-arrow.svg" class="[NAB.App_Footer_HideMore_ButtonIMG_effect]" ng-style="NAB.App_Footer_HideMore_ButtonIMG_style" ng-hide="NAB.App_Footer_HideMore_ButtonIMG_hidden" ng-disabled="NAB.App_Footer_HideMore_ButtonIMG_disabled">
+</div>
+</div>
+<div id="App_Header" class="[NAB.App_Header_effect]" ng-style="NAB.App_Header_style" ng-hide="NAB.App_Header_hidden" ng-disabled="NAB.App_Header_disabled">
+<img id="App_Logo" alt="" ng-src="img/NoteBox_Logo.svg" class="[NAB.App_Logo_effect]" ng-style="NAB.App_Logo_style" ng-hide="NAB.App_Logo_hidden" ng-disabled="NAB.App_Logo_disabled">
+<h1 id="App_Name" class="Font [NAB.App_Name_effect]" ng-style="NAB.App_Name_style" ng-hide="NAB.App_Name_hidden" ng-disabled="NAB.App_Name_disabled">Note Box</h1>
+<img id="App_Menu_Button" alt="" ng-src="img/menu.svg" class="[NAB.App_Menu_Button_effect]" ng-style="NAB.App_Menu_Button_style" ng-hide="NAB.App_Menu_Button_hidden" ng-disabled="NAB.App_Menu_Button_disabled" ng-click="App_Menu_Button_click()">
+</div>
+</div>
+<div id="SideBar_Container" class="[NAB.SideBar_Container_effect]" ng-style="NAB.SideBar_Container_style" ng-hide="NAB.SideBar_Container_hidden" ng-disabled="NAB.SideBar_Container_disabled">
+<div id="SideBar_Buttons_Container" class="[NAB.SideBar_Buttons_Container_effect]" ng-style="NAB.SideBar_Buttons_Container_style" ng-hide="NAB.SideBar_Buttons_Container_hidden" ng-disabled="NAB.SideBar_Buttons_Container_disabled">
+<div id="SideBar_Home_Container" class="[NAB.SideBar_Home_Container_effect]" ng-style="NAB.SideBar_Home_Container_style" ng-hide="NAB.SideBar_Home_Container_hidden" ng-disabled="NAB.SideBar_Home_Container_disabled" ng-click="SideBar_Home_Container_click()">
+<img id="SideBar_Home_Icon" alt="" ng-src="img/NoteBox_Line_Logo.svg" class="[NAB.SideBar_Home_Icon_effect]" ng-style="NAB.SideBar_Home_Icon_style" ng-hide="NAB.SideBar_Home_Icon_hidden" ng-disabled="NAB.SideBar_Home_Icon_disabled">
+<h4 id="SideBar_Home_Text" class="Font [NAB.SideBar_Home_Text_effect]" ng-style="NAB.SideBar_Home_Text_style" ng-hide="NAB.SideBar_Home_Text_hidden" ng-disabled="NAB.SideBar_Home_Text_disabled">Note</h4>
+<div id="BackSide_Home" class="[NAB.BackSide_Home_effect]" ng-style="NAB.BackSide_Home_style" ng-hide="NAB.BackSide_Home_hidden" ng-disabled="NAB.BackSide_Home_disabled">
+</div>
+<div id="SideBar_Home_Selected" class="[NAB.SideBar_Home_Selected_effect]" ng-style="NAB.SideBar_Home_Selected_style" ng-hide="NAB.SideBar_Home_Selected_hidden" ng-disabled="NAB.SideBar_Home_Selected_disabled">
+</div>
+</div>
+<div id="SideBar_Apps_Container" class="[NAB.SideBar_Apps_Container_effect]" ng-style="NAB.SideBar_Apps_Container_style" ng-hide="NAB.SideBar_Apps_Container_hidden" ng-disabled="NAB.SideBar_Apps_Container_disabled" ng-click="SideBar_Apps_Container_click()" ng-mouseenter="SideBar_Apps_Container_mouseenter()" ng-mouseleave="SideBar_Apps_Container_mouseleave()">
+<img id="SideBar_Apps_Icon" alt="" ng-src="img/home.svg" class="[NAB.SideBar_Apps_Icon_effect]" ng-style="NAB.SideBar_Apps_Icon_style" ng-hide="NAB.SideBar_Apps_Icon_hidden" ng-disabled="NAB.SideBar_Apps_Icon_disabled">
+<h4 id="SideBar_Apps_Text" class="Font [NAB.SideBar_Apps_Text_effect]" ng-style="NAB.SideBar_Apps_Text_style" ng-hide="NAB.SideBar_Apps_Text_hidden" ng-disabled="NAB.SideBar_Apps_Text_disabled">Home</h4>
+<div id="BackSide_Apps" class="[NAB.BackSide_Apps_effect]" ng-style="NAB.BackSide_Apps_style" ng-hide="NAB.BackSide_Apps_hidden" ng-disabled="NAB.BackSide_Apps_disabled">
+</div>
+<div id="SideBar_Apps_Selected" class="[NAB.SideBar_Apps_Selected_effect]" ng-style="NAB.SideBar_Apps_Selected_style" ng-hide="NAB.SideBar_Apps_Selected_hidden" ng-disabled="NAB.SideBar_Apps_Selected_disabled">
+</div>
+</div>
+<div id="SideBar_Search_Container" class="[NAB.SideBar_Search_Container_effect]" ng-style="NAB.SideBar_Search_Container_style" ng-hide="NAB.SideBar_Search_Container_hidden" ng-disabled="NAB.SideBar_Search_Container_disabled" ng-click="SideBar_Search_Container_click()" ng-mouseenter="SideBar_Search_Container_mouseenter()" ng-mouseleave="SideBar_Search_Container_mouseleave()">
+<img id="SideBar_Search_Icon" alt="" ng-src="img/Desktop_Search.svg" class="[NAB.SideBar_Search_Icon_effect]" ng-style="NAB.SideBar_Search_Icon_style" ng-hide="NAB.SideBar_Search_Icon_hidden" ng-disabled="NAB.SideBar_Search_Icon_disabled">
+<h4 id="SideBar_Search_Text" class="Font [NAB.SideBar_Search_Text_effect]" ng-style="NAB.SideBar_Search_Text_style" ng-hide="NAB.SideBar_Search_Text_hidden" ng-disabled="NAB.SideBar_Search_Text_disabled">Search</h4>
+<div id="BackSide_Search" class="[NAB.BackSide_Search_effect]" ng-style="NAB.BackSide_Search_style" ng-hide="NAB.BackSide_Search_hidden" ng-disabled="NAB.BackSide_Search_disabled">
+</div>
+<div id="SideBar_Search_Selected" class="[NAB.SideBar_Search_Selected_effect]" ng-style="NAB.SideBar_Search_Selected_style" ng-hide="NAB.SideBar_Search_Selected_hidden" ng-disabled="NAB.SideBar_Search_Selected_disabled">
+</div>
+</div>
+<div id="SideBar_Games_Container" class="[NAB.SideBar_Games_Container_effect]" ng-style="NAB.SideBar_Games_Container_style" ng-hide="NAB.SideBar_Games_Container_hidden" ng-disabled="NAB.SideBar_Games_Container_disabled" ng-click="SideBar_Games_Container_click()" ng-mouseenter="SideBar_Games_Container_mouseenter()" ng-mouseleave="SideBar_Games_Container_mouseleave()">
+<img id="SideBar_Games_Icon" alt="" ng-src="img/joystick.svg" class="[NAB.SideBar_Games_Icon_effect]" ng-style="NAB.SideBar_Games_Icon_style" ng-hide="NAB.SideBar_Games_Icon_hidden" ng-disabled="NAB.SideBar_Games_Icon_disabled">
+<h4 id="SideBar_Games_Text" class="Font [NAB.SideBar_Games_Text_effect]" ng-style="NAB.SideBar_Games_Text_style" ng-hide="NAB.SideBar_Games_Text_hidden" ng-disabled="NAB.SideBar_Games_Text_disabled">Games</h4>
+<div id="BackSide_Games" class="[NAB.BackSide_Games_effect]" ng-style="NAB.BackSide_Games_style" ng-hide="NAB.BackSide_Games_hidden" ng-disabled="NAB.BackSide_Games_disabled">
+</div>
+<div id="SideBar_Games_Selected" class="[NAB.SideBar_Games_Selected_effect]" ng-style="NAB.SideBar_Games_Selected_style" ng-hide="NAB.SideBar_Games_Selected_hidden" ng-disabled="NAB.SideBar_Games_Selected_disabled">
+</div>
+</div>
+</div>
+<input type="file" name="archivo" accept="" id="archivo" style="width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1" onchange="return angular.element($('#FileInput1')).scope().FileInput1_change(fileObjToArray(this.files))" /><label for="archivo" id="FileInput1" class="btn btn-default">Select .txt file</label>
+</div>
+<div id="App_Menu_BodyContainer" class="[NAB.App_Menu_BodyContainer_effect]" ng-style="NAB.App_Menu_BodyContainer_style" ng-hide="NAB.App_Menu_BodyContainer_hidden" ng-disabled="NAB.App_Menu_BodyContainer_disabled" ng-click="App_Menu_BodyContainer_click()">
+<div id="App_Menu_Container" class="[NAB.App_Menu_Container_effect]" ng-style="NAB.App_Menu_Container_style" ng-hide="NAB.App_Menu_Container_hidden" ng-disabled="NAB.App_Menu_Container_disabled">
+<img id="App_Menu_Logo" alt="" ng-src="img/NoteBox_Logo.svg" class="[NAB.App_Menu_Logo_effect]" ng-style="NAB.App_Menu_Logo_style" ng-hide="NAB.App_Menu_Logo_hidden" ng-disabled="NAB.App_Menu_Logo_disabled">
+<div id="App_Submenu_BodyContainer" class="[NAB.App_Submenu_BodyContainer_effect]" ng-style="NAB.App_Submenu_BodyContainer_style" ng-hide="NAB.App_Submenu_BodyContainer_hidden" ng-disabled="NAB.App_Submenu_BodyContainer_disabled">
+<div id="App_Submenu_New_ButtonContainer" class="[NAB.App_Submenu_New_ButtonContainer_effect]" ng-style="NAB.App_Submenu_New_ButtonContainer_style" ng-hide="NAB.App_Submenu_New_ButtonContainer_hidden" ng-disabled="NAB.App_Submenu_New_ButtonContainer_disabled" ng-click="App_Submenu_New_ButtonContainer_click()">
+<img id="App_Submenu_New_ButtonIMG" alt="" ng-src="img/New.svg" class="[NAB.App_Submenu_New_ButtonIMG_effect]" ng-style="NAB.App_Submenu_New_ButtonIMG_style" ng-hide="NAB.App_Submenu_New_ButtonIMG_hidden" ng-disabled="NAB.App_Submenu_New_ButtonIMG_disabled">
+<h2 id="App_Submenu_New_ButtonText" class="Font [NAB.App_Submenu_New_ButtonText_effect]" ng-style="NAB.App_Submenu_New_ButtonText_style" ng-hide="NAB.App_Submenu_New_ButtonText_hidden" ng-disabled="NAB.App_Submenu_New_ButtonText_disabled">New</h2>
+</div>
+<div id="App_Submenu_Open_ButtonContainer" class="[NAB.App_Submenu_Open_ButtonContainer_effect]" ng-style="NAB.App_Submenu_Open_ButtonContainer_style" ng-hide="NAB.App_Submenu_Open_ButtonContainer_hidden" ng-disabled="NAB.App_Submenu_Open_ButtonContainer_disabled" ng-click="App_Submenu_Open_ButtonContainer_click()">
+<img id="App_Submenu_Open_ButtonIMG" alt="" ng-src="img/Open.svg" class="[NAB.App_Submenu_Open_ButtonIMG_effect]" ng-style="NAB.App_Submenu_Open_ButtonIMG_style" ng-hide="NAB.App_Submenu_Open_ButtonIMG_hidden" ng-disabled="NAB.App_Submenu_Open_ButtonIMG_disabled">
+<h2 id="App_Submenu_Open_ButtonText" class="Font [NAB.App_Submenu_Open_ButtonText_effect]" ng-style="NAB.App_Submenu_Open_ButtonText_style" ng-hide="NAB.App_Submenu_Open_ButtonText_hidden" ng-disabled="NAB.App_Submenu_Open_ButtonText_disabled">Open</h2>
+</div>
+<div id="App_Submenu_URLImport_ButtonContainer" class="[NAB.App_Submenu_URLImport_ButtonContainer_effect]" ng-style="NAB.App_Submenu_URLImport_ButtonContainer_style" ng-hide="NAB.App_Submenu_URLImport_ButtonContainer_hidden" ng-disabled="NAB.App_Submenu_URLImport_ButtonContainer_disabled" ng-click="App_Submenu_URLImport_ButtonContainer_click()">
+<img id="App_Submenu_URLImport_ButtonIMG" alt="" ng-src="img/Cloud_Upload.svg" class="[NAB.App_Submenu_URLImport_ButtonIMG_effect]" ng-style="NAB.App_Submenu_URLImport_ButtonIMG_style" ng-hide="NAB.App_Submenu_URLImport_ButtonIMG_hidden" ng-disabled="NAB.App_Submenu_URLImport_ButtonIMG_disabled">
+<h2 id="App_Submenu_URLImport_ButtonText" class="Font [NAB.App_Submenu_URLImport_ButtonText_effect]" ng-style="NAB.App_Submenu_URLImport_ButtonText_style" ng-hide="NAB.App_Submenu_URLImport_ButtonText_hidden" ng-disabled="NAB.App_Submenu_URLImport_ButtonText_disabled">Import from URL</h2>
+</div>
+<div id="App_Submenu_Save_ButtonContainer" class="[NAB.App_Submenu_Save_ButtonContainer_effect]" ng-style="NAB.App_Submenu_Save_ButtonContainer_style" ng-hide="NAB.App_Submenu_Save_ButtonContainer_hidden" ng-disabled="NAB.App_Submenu_Save_ButtonContainer_disabled" ng-click="App_Submenu_Save_ButtonContainer_click()">
+<img id="App_Submenu_Save_ButtonIMG" alt="" ng-src="img/Save.svg" class="[NAB.App_Submenu_Save_ButtonIMG_effect]" ng-style="NAB.App_Submenu_Save_ButtonIMG_style" ng-hide="NAB.App_Submenu_Save_ButtonIMG_hidden" ng-disabled="NAB.App_Submenu_Save_ButtonIMG_disabled">
+<h2 id="App_Submenu_Save_ButtonText" class="Font [NAB.App_Submenu_Save_ButtonText_effect]" ng-style="NAB.App_Submenu_Save_ButtonText_style" ng-hide="NAB.App_Submenu_Save_ButtonText_hidden" ng-disabled="NAB.App_Submenu_Save_ButtonText_disabled">Save</h2>
+</div>
+<h3 id="App_Signature" class="[NAB.App_Signature_effect]" ng-style="NAB.App_Signature_style" ng-hide="NAB.App_Signature_hidden" ng-disabled="NAB.App_Signature_disabled">V 1.0.0 - <a href="https://github.com/LaminApp"><u>GitHub</u></a></h3>
+</div>
+</div>
+</div>
+</div>
+<div id="App_Loading_Container" class="[NAB.App_Loading_Container_effect]" ng-style="NAB.App_Loading_Container_style" ng-hide="NAB.App_Loading_Container_hidden" ng-disabled="NAB.App_Loading_Container_disabled">
+<img id="App_Loading" alt="" ng-src="img/Loading.svg" class="[NAB.App_Loading_effect]" ng-style="NAB.App_Loading_style" ng-hide="NAB.App_Loading_hidden" ng-disabled="NAB.App_Loading_disabled">
+<img id="App_Loading_Logo" alt="" ng-src="img/NoteBox_Line_Logo.svg" class="[NAB.App_Loading_Logo_effect]" ng-style="NAB.App_Loading_Logo_style" ng-hide="NAB.App_Loading_Logo_hidden" ng-disabled="NAB.App_Loading_Logo_disabled">
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="SearchDialog">
+<div id="DialogContainer1" class="modal-dialog modal-sm"><div class="modal-content" style="height:100%">
+</div></div>
+<div id="Search_CloseButton_Container" class="[NAB.Search_CloseButton_Container_effect]" ng-style="NAB.Search_CloseButton_Container_style" ng-hide="NAB.Search_CloseButton_Container_hidden" ng-disabled="NAB.Search_CloseButton_Container_disabled" ng-click="Search_CloseButton_Container_click()">
+<img id="Image3" alt="" ng-src="img/cancel.svg" class="[NAB.Image3_effect]" ng-style="NAB.Image3_style" ng-hide="NAB.Image3_hidden" ng-disabled="NAB.Image3_disabled">
+</div>
+<div id="Search_BodyContainer" class="[NAB.Search_BodyContainer_effect]" ng-style="NAB.Search_BodyContainer_style" ng-hide="NAB.Search_BodyContainer_hidden" ng-disabled="NAB.Search_BodyContainer_disabled">
+<h1 id="Search_Title" class="Font [NAB.Search_Title_effect]" ng-style="NAB.Search_Title_style" ng-hide="NAB.Search_Title_hidden" ng-disabled="NAB.Search_Title_disabled">Find anything on LaminApp</h1>
+<div id="Search_Button_Container" class="[NAB.Search_Button_Container_effect]" ng-style="NAB.Search_Button_Container_style" ng-hide="NAB.Search_Button_Container_hidden" ng-disabled="NAB.Search_Button_Container_disabled" ng-click="Search_Button_Container_click()">
+<img id="Search_Button_Icon" alt="" ng-src="img/search-interface-symbol.svg" class="[NAB.Search_Button_Icon_effect]" ng-style="NAB.Search_Button_Icon_style" ng-hide="NAB.Search_Button_Icon_hidden" ng-disabled="NAB.Search_Button_Icon_disabled">
+</div>
+<div id="Search_Input_Container" class="[NAB.Search_Input_Container_effect]" ng-style="NAB.Search_Input_Container_style" ng-hide="NAB.Search_Input_Container_hidden" ng-disabled="NAB.Search_Input_Container_disabled">
+<input id="Search_Input" type="text" class="form-control Font [NAB.Search_Input_effect]" ng-style="NAB.Search_Input_style" ng-hide="NAB.Search_Input_hidden" ng-disabled="NAB.Search_Input_disabled" ng-model="$root.SearchInput" placeholder="Search now...">
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="ImportFromURL">
+<div id="DialogContainer2" class="modal-dialog modal-sm"><div class="modal-content" style="height:100%">
+</div></div>
+<div id="IFU_CloseButton_Container" class="[NAB.IFU_CloseButton_Container_effect]" ng-style="NAB.IFU_CloseButton_Container_style" ng-hide="NAB.IFU_CloseButton_Container_hidden" ng-disabled="NAB.IFU_CloseButton_Container_disabled" ng-click="IFU_CloseButton_Container_click()">
+<img id="Image1" alt="" ng-src="img/cancel.svg" class="[NAB.Image1_effect]" ng-style="NAB.Image1_style" ng-hide="NAB.Image1_hidden" ng-disabled="NAB.Image1_disabled">
+</div>
+<div id="IFU_BodyContainer" class="[NAB.IFU_BodyContainer_effect]" ng-style="NAB.IFU_BodyContainer_style" ng-hide="NAB.IFU_BodyContainer_hidden" ng-disabled="NAB.IFU_BodyContainer_disabled">
+<h1 id="IFU_Title" class="Font [NAB.IFU_Title_effect]" ng-style="NAB.IFU_Title_style" ng-hide="NAB.IFU_Title_hidden" ng-disabled="NAB.IFU_Title_disabled">Enter the URL of the desired file</h1>
+<div id="IFU_Button_Container" class="[NAB.IFU_Button_Container_effect]" ng-style="NAB.IFU_Button_Container_style" ng-hide="NAB.IFU_Button_Container_hidden" ng-disabled="NAB.IFU_Button_Container_disabled" ng-click="IFU_Button_Container_click()">
+<img id="IFU_Button_Icon" alt="" ng-src="img/Cloud_Upload.svg" class="[NAB.IFU_Button_Icon_effect]" ng-style="NAB.IFU_Button_Icon_style" ng-hide="NAB.IFU_Button_Icon_hidden" ng-disabled="NAB.IFU_Button_Icon_disabled">
+</div>
+<div id="IFU_Input_Container" class="[NAB.IFU_Input_Container_effect]" ng-style="NAB.IFU_Input_Container_style" ng-hide="NAB.IFU_Input_Container_hidden" ng-disabled="NAB.IFU_Input_Container_disabled">
+<input id="IFU_Input" type="text" class="form-control Font [NAB.IFU_Input_effect]" ng-style="NAB.IFU_Input_style" ng-hide="NAB.IFU_Input_hidden" ng-disabled="NAB.IFU_Input_disabled" ng-model="$root.IFU_URL" placeholder="URL...">
+</div>
+</div>
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/neoapp.min.js"></script>
+<script src="js/neoapp-ui.min.js"></script>
+<script src="js/main.js"></script>
+<body oncontextmenu="return false;">
+</body>
+</html>
