@@ -1,0 +1,237 @@
+html {width:100%;height:100%;overflow:hidden}
+body {height:100%;width:100%}
+.app-viewport {position:absolute;top:0;bottom:0;width:100%}
+html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;top:0px;bottom:0px;left:0px;right:0px;margin:auto}p,h1,h2,h3,h4,h5,h6{overflow:hidden}a:focus,.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn.active.focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline:0}.nav,.pagination,.carousel,.panel-title a{cursor:pointer}.modal{overflow:auto}.modal-dialog{margin-top:0;margin-bottom:0;padding-top:10px}.modal-content{overflow:hidden}.modal-backdrop{opacity:.5}.pagination{margin:0}.input-group-btn{vertical-align:top}.input-group-btn>.btn{height:100%}.input-group>.form-control{height:100%}.input-group{padding:0}.neocheckbox [type="checkbox"]:not(:checked),.neocheckbox [type="checkbox"]:checked{position:absolute;left:-9999px}.neocheckbox [type="checkbox"]:not(:checked) + label,.neocheckbox [type="checkbox"]:checked + label{position:relative;padding-left:1.95em;cursor:pointer}.neocheckbox [type="checkbox"]:not(:checked) + label:before,.neocheckbox [type="checkbox"]:checked + label:before{content:'';position:absolute;left:0;top:0;width:1.25em;height:1.25em;border:0.15em solid #aaa;background:#fff;border-radius:4px}.neocheckbox [type="checkbox"]:not(:checked) + label:after,.neocheckbox [type="checkbox"]:checked + label:after{content:"\2713\0020";position:absolute;top:.2em;left:.2em;font-size:1.1em;line-height:0.8;color:#444444;transition:all .2s;font-family:'Lucida Sans Unicode','Arial Unicode MS',Arial}.neocheckbox [type="checkbox"]:not(:checked) + label:after{opacity:0;transform:scale(0)}.neocheckbox [type="checkbox"]:checked + label:after{opacity:1;transform:scale(1)}.neocheckbox [type="checkbox"]:disabled:not(:checked) + label:before,.neocheckbox [type="checkbox"]:disabled:checked + label:before{box-shadow:none;border-color:#bbb;background-color:#ddd}.neocheckbox [type="checkbox"]:disabled:checked + label:after{color:#999}.neocheckbox [type="checkbox"]:disabled + label{color:#aaa}.neocheckbox label:hover:before{border:0.15em solid #888!important}.neoradio [type="radio"]:not(:checked),.neoradio [type="radio"]:checked{position:absolute;left:-9999px}.neoradio [type="radio"]:not(:checked) + label,.neoradio [type="radio"]:checked + label{position:relative;padding-left:1.95em;cursor:pointer}.neoradio [type="radio"]:not(:checked) + label:before,.neoradio [type="radio"]:checked + label:before{content:'';position:absolute;left:0;top:0;width:1.25em;height:1.25em;border:0.15em solid #aaa;background:#fff;border-radius:100px}.neoradio [type="radio"]:not(:checked) + label:after,.neoradio [type="radio"]:checked + label:after{content:"\2713\0020";position:absolute;top:.2em;left:.2em;font-size:1.1em;line-height:0.8;color:#444444;transition:all .2s;font-family:'Lucida Sans Unicode','Arial Unicode MS',Arial}.neoradio [type="radio"]:not(:checked) + label:after{opacity:0;transform:scale(0)}.neoradio [type="radio"]:checked + label:after{opacity:1;transform:scale(1)}.neoradio [type="radio"]:disabled:not(:checked) + label:before,.neoradio [type="radio"]:disabled:checked + label:before{box-shadow:none;border-color:#bbb;background-color:#ddd}.neoradio [type="radio"]:disabled:checked + label:after{color:#999}.neoradio [type="radio"]:disabled + label{color:#aaa}.neoradio label:hover:before{border:0.15em solid #888!important}
+#App {position:relative;width:100%;height:100%;overflow:auto;;background-color:#000000}
+#App_BodyContainer {position:absolute;left:0px;width:100%;top:0px;height:100%;margin:0;background-color:#000000;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#App_Container {position:absolute;left:0px;width:100%;top:0px;height:100%;margin:0;background-color:#000000;overflow-x:hidden;overflow-y:hidden}
+#App_Text {position:absolute;left:0px;width:100%;top:0px;height:93.3333333333333%;margin:0;color:#FFFFFF;font-family:Courier New,Courier,monospace;font-size:12pt;font-weight:400;background-color:#000000;border-style:none;border-width:0px;box-shadow:0px 0px 0px black}
+#App_Text:hover {color:#FFFFFF;background-color:#000000;border-style:none;border-width:0px;box-shadow:0px 0px 0px black}
+#App_Text:focus {color:#FFFFFF;font-weight:400;background-color:#000000;border-style:none;border-width:0px;box-shadow:0px 0px 0px black}
+#App_Contex_BodyContainer {position:absolute;left:0px;width:100%;top:0px;height:100%;margin:0;background-color:rgba(0,0,0,0.35);overflow-x:hidden;overflow-y:hidden}
+#App_Contex_Container {position:absolute;left:0px;width:35%;top:0px;height:58.6666666666667%;margin:0;background-color:rgba(36,36,36,0.82);border-color:#383838;border-radius:10px;border-style:solid;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#App_Operator1_Container {position:absolute;left:0px;width:100%;top:0px;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator1_Text {position:absolute;left:20%;width:80%;top:27.5%;height:57.5%;margin:0;color:#E0E0E0;font-size:12pt}
+#App_Operator2_Container {position:absolute;left:0px;width:100%;top:11.3636363636364%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator2_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#App_Operator3_Container {position:absolute;left:0px;width:100%;top:22.7272727272727%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator3_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#App_Operator4_Container {position:absolute;left:0px;width:100%;top:34.0909090909091%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator4_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#Line1 {position:absolute;left:12.8571428571429%;width:74.2857142857143%;top:47.7272727272727%;height:0.568181818181818%;margin:0;stroke:black;stroke-width:1px}
+#App_Operator5_Container {position:absolute;left:0px;width:100%;top:50%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator5_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#App_Operator6_Container {position:absolute;left:0px;width:100%;top:61.3636363636364%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator6_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#Line2 {position:absolute;left:12.8571428571429%;width:74.2857142857143%;top:75%;height:0.568181818181818%;margin:0;stroke:black;stroke-width:1px}
+#App_Operator7_Container {position:absolute;left:0px;width:100%;top:77.2727272727273%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator7_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#App_Operator8_Container {position:absolute;left:0px;width:100%;top:88.6363636363636%;height:11.3636363636364%;margin:0;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#App_Operator8_Text {position:absolute;left:20%;width:80%;top:27.5%;height:60%;margin:0;color:#E0E0E0;font-size:12pt}
+#App_More_Container {position:absolute;left:0;bottom:0;width:100%;height:7.16666666666667%;margin:0 0 45px 0;;overflow-x:hidden;overflow-y:hidden}
+#App_More_HiddenRoom {position:relative;float:left;width:69%;height:100%;;overflow-x:hidden;overflow-y:hidden}
+#App_More_AboutUs_ButtonContainer {position:relative;float:left;width:11%;height:100%;background-color:#383838;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_More_AboutUs_ButtonText {position:absolute;left:0px;width:100%;top:30.2325581395349%;height:37.2093023255814%;margin:0;color:#FFFFFF;text-align:center}
+#App_More_Github_ButtonContainer {position:relative;float:left;width:11%;height:100%;margin:0 0 0 3px;background-color:#383838;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_More_Github_ButtonText {position:absolute;left:0px;width:100%;top:30.2325581395349%;height:37.2093023255814%;margin:0;color:#FFFFFF;text-align:center}
+#App_Footer_Container {position:absolute;left:0;bottom:0;width:100%;height:7.16666666666667%;background-color:#383838;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_Char_Counter {position:absolute;left:86%;width:13%;top:30.2325581395349%;height:74.4186046511628%;margin:0;color:#E0E0E0;text-align:right}
+#App_Footer_New_ButtonContainer {position:relative;float:left;width:15.25%;height:100%;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_New_ButtonIMG {position:absolute;left:14.7540983606557%;width:19.672131147541%;top:11.6279069767442%;height:74.4186046511628%;margin:0;}
+#App_Footer_New_ButtonText {position:absolute;left:43.4426229508197%;width:52.4590163934426%;top:30.2325581395349%;height:37.2093023255814%;margin:0;color:#FFFFFF}
+#App_Footer_Open_ButtonContainer {position:relative;float:left;width:15.25%;height:100%;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_Open_ButtonIMG {position:absolute;left:14.7540983606557%;width:19.672131147541%;top:11.6279069767442%;height:74.4186046511628%;margin:0;}
+#App_Footer_Open_ButtonText {position:absolute;left:43.4426229508197%;width:52.4590163934426%;top:30.2325581395349%;height:37.2093023255814%;margin:0;color:#FFFFFF}
+#App_Footer_URLImport_ButtonContainer {position:relative;float:left;width:23.5%;height:100%;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_URLImport_ButtonIMG {position:absolute;left:6.38297872340426%;width:15.9574468085106%;top:11.6279069767442%;height:74.4186046511628%;margin:0;}
+#App_Footer_URLImport_ButtonText {position:absolute;left:28.1914893617021%;width:59.0425531914894%;top:30.2325581395349%;height:37.2093023255814%;margin:0;color:#FFFFFF}
+#App_Footer_Save_ButtonContainer {position:relative;float:left;width:15.25%;height:100%;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_Save_ButtonIMG {position:absolute;left:14.7540983606557%;width:19.672131147541%;top:11.6279069767442%;height:74.4186046511628%;margin:0;}
+#App_Footer_Save_ButtonText {position:absolute;left:43.4426229508197%;width:52.4590163934426%;top:30.2325581395349%;height:37.2093023255814%;margin:0;color:#FFFFFF}
+#App_Footer_More_ButtonContainer {position:relative;float:left;width:6.25%;height:100%;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_More_ButtonText {position:absolute;left:0px;width:100%;top:2.32558139534884%;height:69.7674418604651%;margin:0;color:#FFFFFF;text-align:center}
+#App_Footer_HideMore_ButtonContainer {position:relative;float:left;width:6.25%;height:100%;border-radius:5px;overflow-x:hidden;overflow-y:hidden}
+#App_Footer_HideMore_ButtonIMG {position:absolute;left:36%;width:48%;top:11.6279069767442%;height:74.4186046511628%;margin:0;}
+#App_Header {position:relative;width:800px;height:8.33333333333333%;background-color:rgba(56,56,56,0.70);border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#App_Logo {position:relative;float:left;width:8.75%;height:100%;margin:0px 10px;padding-bottom:7px;padding-top:7px}
+#App_Name {position:relative;float:left;width:19.5%;height:100%;margin:15px 0 0 0;color:#E0E0E0;font-size:13pt;font-weight:bold}
+#App_Menu_Button {position:relative;float:right;width:9.75%;height:100%;margin:0 10px 0 0;padding-bottom:5px;padding-left:5px;padding-right:5px;padding-top:5px}
+#SideBar_Container {position:absolute;left:0px;width:14%;top:0px;height:100%;margin:0;background-color:#242424;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Buttons_Container {position:absolute;left:0px;width:100%;top:28%;height:44%;margin:0;background-color:rgba(255,255,255,0.00);border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Home_Container {position:absolute;left:0px;width:100%;top:0px;height:33.3333333333333%;margin:0;background-color:rgba(255,255,255,0.00);border-style:none;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Home_Icon {position:absolute;left:25%;width:50%;top:0px;height:63.6363636363636%;margin:0;}
+#SideBar_Home_Text {position:absolute;left:0px;width:100%;top:63.6363636363636%;height:27.2727272727273%;margin:0;color:#FFFFFF;text-align:center}
+#BackSide_Home {position:absolute;left:-25%;width:46.4285714285714%;top:18.1818181818182%;height:63.6363636363636%;margin:0;background-color:#7A2646;border-radius:50px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Home_Selected {position:absolute;left:-25%;width:32.1428571428571%;top:13.6363636363636%;height:72.7272727272727%;margin:0;background-color:rgba(255,18,83,0.50);border-radius:500px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Apps_Container {position:absolute;left:0px;width:100%;top:33.3333333333333%;height:31.0606060606061%;margin:0;background-color:rgba(255,255,255,0.00);border-style:dotted;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Apps_Icon {position:absolute;left:25%;width:50%;top:0px;height:68.2926829268293%;margin:0;opacity:0.5}
+#SideBar_Apps_Text {position:absolute;left:0px;width:100%;top:68.2926829268293%;height:29.2682926829268%;margin:0;color:#FFFFFF;text-align:center;opacity:0.5}
+#BackSide_Apps {position:absolute;left:-25%;width:46.4285714285714%;top:15.8536585365854%;height:68.2926829268293%;margin:0;background-color:#7A2646;border-radius:50px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Apps_Selected {position:absolute;left:-25%;width:32.1428571428571%;top:10.9756097560976%;height:78.0487804878049%;margin:0;background-color:rgba(255,18,83,0.50);border-radius:500px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Search_Container {position:absolute;left:0px;width:100%;top:64.3939393939394%;height:33.3333333333333%;margin:0;background-color:rgba(255,255,255,0.00);border-style:none;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Search_Icon {position:absolute;left:32.1428571428571%;width:35.7142857142857%;top:9.09090909090909%;height:45.4545454545455%;margin:0;opacity:0.5}
+#SideBar_Search_Text {position:absolute;left:0px;width:100%;top:63.6363636363636%;height:27.2727272727273%;margin:0;color:#FFFFFF;text-align:center;opacity:0.5}
+#BackSide_Search {position:absolute;left:-25%;width:46.4285714285714%;top:18.1818181818182%;height:63.6363636363636%;margin:0;background-color:#7A2646;border-radius:50px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Search_Selected {position:absolute;left:-25%;width:32.1428571428571%;top:13.6363636363636%;height:72.7272727272727%;margin:0;background-color:rgba(255,18,83,0.50);border-radius:500px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Games_Container {position:absolute;left:0px;width:85.7142857142857%;top:64.3939393939394%;height:33.3333333333333%;margin:0;background-color:rgba(255,255,255,0.00);border-style:none;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Games_Icon {position:absolute;left:29.1666666666667%;width:41.6666666666667%;top:9.09090909090909%;height:45.4545454545455%;margin:0;opacity:0.5}
+#SideBar_Games_Text {position:absolute;left:0px;width:100%;top:63.6363636363636%;height:27.2727272727273%;margin:0;color:#FFFFFF;text-align:center;opacity:0.5}
+#BackSide_Games {position:absolute;left:-29.1666666666667%;width:54.1666666666667%;top:18.1818181818182%;height:63.6363636363636%;margin:0;background-color:#7A2646;border-radius:50px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#SideBar_Games_Selected {position:absolute;left:-29.1666666666667%;width:37.5%;top:13.6363636363636%;height:72.7272727272727%;margin:0;background-color:rgba(255,18,83,0.50);border-radius:500px;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#FileInput1 {position:absolute;left:-114.285714285714%;width:100%;top:102.666666666667%;height:6.66666666666667%;margin:0;}
+#App_Menu_BodyContainer {position:relative;float:right;width:100%;height:100%;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#App_Menu_Container {position:relative;float:right;width:81%;height:100%;background-color:#252525;overflow-x:hidden;overflow-y:hidden}
+#App_Menu_Logo {position:absolute;left:17.283950617284%;width:66.6666666666667%;top:4%;height:18.6666666666667%;margin:0;}
+#App_Submenu_BodyContainer {position:absolute;left:0px;width:100%;top:26.5%;height:73.5%;margin:0;background-color:#191919;overflow-x:hidden;overflow-y:hidden}
+#App_Submenu_New_ButtonContainer {position:absolute;left:2.46913580246914%;width:95.0617283950617%;top:3.85487528344671%;height:12.6984126984127%;margin:0;;overflow-x:hidden;overflow-y:hidden}
+#App_Submenu_New_ButtonIMG {position:absolute;left:2.5974025974026%;width:9.09090909090909%;top:0px;height:100%;margin:0;}
+#App_Submenu_New_ButtonText {position:absolute;left:19.4805194805195%;width:74.025974025974%;top:37.5%;height:42.8571428571429%;margin:0;color:#FFFFFF;font-size:20px}
+#App_Submenu_Open_ButtonContainer {position:absolute;left:2.46913580246914%;width:95.0617283950617%;top:16.5532879818594%;height:12.6984126984127%;margin:0;;overflow-x:hidden;overflow-y:hidden}
+#App_Submenu_Open_ButtonIMG {position:absolute;left:2.5974025974026%;width:9.09090909090909%;top:0px;height:100%;margin:0;}
+#App_Submenu_Open_ButtonText {position:absolute;left:19.4805194805195%;width:74.025974025974%;top:37.5%;height:42.8571428571429%;margin:0;color:#FFFFFF;font-size:20px}
+#App_Submenu_URLImport_ButtonContainer {position:absolute;left:2.46913580246914%;width:95.0617283950617%;top:29.2517006802721%;height:12.6984126984127%;margin:0;;overflow-x:hidden;overflow-y:hidden}
+#App_Submenu_URLImport_ButtonIMG {position:absolute;left:2.5974025974026%;width:9.09090909090909%;top:0px;height:100%;margin:0;}
+#App_Submenu_URLImport_ButtonText {position:absolute;left:19.4805194805195%;width:74.025974025974%;top:37.5%;height:42.8571428571429%;margin:0;color:#FFFFFF;font-size:20px}
+#App_Submenu_Save_ButtonContainer {position:absolute;left:2.46913580246914%;width:95.0617283950617%;top:41.9501133786848%;height:12.6984126984127%;margin:0;;overflow-x:hidden;overflow-y:hidden}
+#App_Submenu_Save_ButtonIMG {position:absolute;left:2.5974025974026%;width:9.09090909090909%;top:0px;height:100%;margin:0;}
+#App_Submenu_Save_ButtonText {position:absolute;left:19.4805194805195%;width:74.025974025974%;top:37.5%;height:42.8571428571429%;margin:0;color:#FFFFFF;font-size:20px}
+#App_Signature {position:absolute;left:0px;width:100%;top:89.1156462585034%;height:5.4421768707483%;margin:0;color:#FFFFFF;font-family:Courier New,Courier,monospace;font-size:12pt;font-weight:bold;text-align:center}
+#App_Loading_Container {position:absolute;left:0px;width:102%;top:0px;height:100%;margin:0;background-color:rgba(0,0,0,0.85);border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#App_Loading {position:absolute;left:38.9705882352941%;width:22.0588235294118%;top:34.8333333333333%;height:30%;margin:0;opacity:0.5}
+#App_Loading_Logo {position:absolute;left:43.8725490196078%;width:12.2549019607843%;top:41.6666666666667%;height:16.6666666666667%;margin:0;}
+#DialogContainer1 {margin-left:auto;margin-right:auto;width:0px;height:0px;background-color:rgba(255,255,255,0.00)}
+#Search_CloseButton_Container {position:absolute;left:48.25%;width:6%;top:2.5%;height:8%;margin:0;background-color:rgba(255,255,255,0.00);border-radius:500px;border-style:solid;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#Image3 {position:absolute;left:25%;width:50%;top:25%;height:50%;margin:0;}
+#Search_BodyContainer {position:absolute;left:38%;width:53%;top:39.3333333333333%;height:21.3333333333333%;margin:0;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#Search_Title {position:absolute;left:0px;width:84.9056603773585%;top:9.375%;height:31.25%;margin:0;color:#FFFFFF;font-size:18pt;text-align:center}
+#Search_Button_Container {position:absolute;left:87.2641509433962%;width:11.3207547169811%;top:46.875%;height:37.5%;margin:0;background-color:#b81d47;border-color:#E0E0E0;border-radius:500px;border-style:none;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#Search_Button_Icon {position:absolute;left:27.0833333333333%;width:45.8333333333333%;top:27.0833333333333%;height:45.8333333333333%;margin:0;}
+#Search_Input_Container {position:absolute;left:0.943396226415094%;width:84.9056603773585%;top:46.875%;height:37.5%;margin:0;background-color:rgba(56,56,56,0.00);border-color:#FFFFFF;border-radius:500px;border-style:solid;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#Search_Input {position:absolute;left:0px;width:100%;top:0px;height:100%;margin:0;color:#FFFFFF;text-align:center;background-color:rgba(56,56,56,0.00);border-style:none}
+#Search_Input:hover {background-color:rgba(56,56,56,0.00);border-radius:500px;border-width:0px;box-shadow:0px 0px 0px black}
+#Search_Input:focus {background-color:rgba(56,56,56,0.50);border-radius:500px;border-width:0px;box-shadow:0px 0px 0px black}
+#DialogContainer2 {margin-left:auto;margin-right:auto;width:0px;height:0px;background-color:rgba(255,255,255,0.00)}
+#IFU_CloseButton_Container {position:absolute;left:48.25%;width:6%;top:2.5%;height:8%;margin:0;background-color:rgba(255,255,255,0.00);border-radius:500px;border-style:solid;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#Image1 {position:absolute;left:25%;width:50%;top:25%;height:50%;margin:0;}
+#IFU_BodyContainer {position:absolute;left:38%;width:53%;top:39.3333333333333%;height:21.3333333333333%;margin:0;border-style:none;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#IFU_Title {position:absolute;left:0px;width:84.9056603773585%;top:9.375%;height:31.25%;margin:0;color:#FFFFFF;font-size:18pt;text-align:center}
+#IFU_Button_Container {position:absolute;left:87.2641509433962%;width:11.3207547169811%;top:46.875%;height:37.5%;margin:0;background-color:#b81d47;border-color:#E0E0E0;border-radius:500px;border-style:none;border-width:1px;cursor:pointer;overflow-x:hidden;overflow-y:hidden}
+#IFU_Button_Icon {position:absolute;left:16.6666666666667%;width:68.75%;top:20.8333333333333%;height:56.25%;margin:0;}
+#IFU_Input_Container {position:absolute;left:0.943396226415094%;width:84.9056603773585%;top:46.875%;height:37.5%;margin:0;background-color:rgba(56,56,56,0.00);border-color:#FFFFFF;border-radius:500px;border-style:solid;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#IFU_Input {position:absolute;left:0px;width:100%;top:0px;height:100%;margin:0;color:#FFFFFF;text-align:center;background-color:rgba(56,56,56,0.00);border-style:none}
+#IFU_Input:hover {background-color:rgba(56,56,56,0.00);border-radius:500px;border-width:0px;box-shadow:0px 0px 0px black}
+#IFU_Input:focus {background-color:rgba(56,56,56,0.50);border-radius:500px;border-width:0px;box-shadow:0px 0px 0px black}
+#App_Loading_Container {-webkit-backdrop-filter: blur(8px);backdrop-filter: blur(8px);Position: Fixed;}
+
+  #MApp_Loading_Container {-webkit-backdrop-filter: blur(8px);backdrop-filter: blur(8px);Position: Fixed;}
+
+  @font-face {font-family: 'GothamLight';src: url('fonts/GothamLight.ttf');url('fonts/GothamLight.ttf') format('truetype'),;}
+
+  .Font {font-family: 'GothamLight' !important;}
+
+  .noselect {-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+
+  .eael-grid-post-holder {box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.5);}
+
+  .shadow 2 {box-shadow: 50px 0px 7px 0px rgba(0, 0, 0, 0.98);}
+
+
+  .p {font-family: 'GothamLight' !important;text-align: justify;}
+
+  .disableselect {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+
+
+  .disabledrag{-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;}
+
+  .make-it-slow {box-shadow: 0 1px 2px rgba(0,0,0,0.15);transition: box-shadow 0.3s ease-in-out;}
+
+  body {background-color: black}
+
+
+  /* unvisited link */
+  a:link {color: white;}
+
+  /* visited link */
+  a:visited {color: white;}
+
+  /* mouse over link */
+  a:hover {color: #E0E0E0;text-decoration: none;}
+
+  /* selected link */
+  a:active {color: #707070;}
+
+
+  /*========= SideBar ==========*/
+  #SideBar_Container {width: 112px;}
+
+  #BackSide_Home, #BackSide_Apps, #BackSide_Games, #BackSide_Search {filter: blur(12px);-webkit-filter: blur(8px);}
+
+  #SideBar_App_Back_Button_Container {background-color: #383838;-webkit-filter: drop-shadow(0px 0px 0px #595959);filter: drop-shadow(0px 0px 0px #595959);transition: all 0.2s ease-in-out}
+
+  #SideBar_App_Back_Button_Container:hover {background-color: #5c5c5c;-webkit-filter: drop-shadow(0px 0px 0px #595959);filter: drop-shadow(0px 0px 0px #595959);transition: all 0.2s ease-in-out}
+
+  #SideBar_App_Back_Button_Container:active {background-color: #1d1d1d;-webkit-filter: drop-shadow(0px 0px 0px #595959);filter: drop-shadow(0px 0px 0px #595959);transition: all 0.2s ease-in-out}
+
+  #SideBar_Apps_Container {border-left-width: 0px;border-right-width: 0px;border-top-width: 2px;border-bottom-width: 2px;}
+
+  #SideBar_Developers_Container {background-color: rgba(255,255,255,0.00);width: 45px;height: 45px;transition: background-color 0.5s ease-in-out}
+
+  #SideBar_Developers_Container:hover {background-color: #191919;width: 45px;height: 45px;transition: background-color 0.5s ease-in-out}
+
+  #App_Line2 {width: 100%;}
+
+
+  /* UI */
+  .material-icons {font-family: 'Material Icons';font-weight: normal;font-style: normal;font-size: 18px;line-height: 1;letter-spacing: normal;text-transform: none;display: inline-block;white-space: nowrap;word-wrap: normal;direction: ltr;-webkit-font-feature-settings: 'liga';-webkit-font-smoothing: antialiased;}
+
+/*========== Dialogs ==========*/
+.modal-content {position: relative;background-clip: padding-box;background-color: #00000000;border: 1px solid #999;border-radius: 6px;-webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);box-shadow: 0 3px 9pxrgba(0,0,0,.5);outline: 0;backdrop-filter: blur(10px)}
+
+#DialogContainer1 {margin-left: auto;margin-right: auto;width: 80%;height: 0.333333333333333%;background-color: rgba(0,128,128,0.43);display: none}
+
+#DialogContainer2 {margin-left: auto;margin-right: auto;width: 80%;height: 0.333333333333333%;background-color: rgba(0,128,128,0.43);display: none}
+
+.modal-open .modal {overflow-x: hidden;overflow-y: auto;backdrop-filter: blur(10px);}
+
+  /*========== Search ==========*/
+  #Search_BodyContainer, #IFU_BodyContainer {width: 424px;height: 128px;left: 38%;}
+
+  #Search_Button_Container, #IFU_Button_Container {background-color: #b81d47;transition: background-color 0.25s ease-in-out}
+
+#Search_Button_Container:hover, #IFU_Button_Container:hover {background-color: #dc426b;transition: background-color 0.25s ease-in-out}
+
+#Search_Button_Container:active, #IFU_Button_Container:active {background-color: #891937;transition: background-color 0.2s ease-in-out}
+
+#Search_CloseButton_Container, #IFU_CloseButton_Container {Width: 48px;Height: 48px;Left: 48.2%;background-color: rgba(255,255,255,0.00);-webkit-filter: drop-shadow(0px 0px 0px #595959);filter: drop-shadow(0px 0px 0px #595959);transition: all 0.2s ease-in-out}
+
+  #Search_CloseButton_Container:hover, #IFU_CloseButton_Container:hover {background-color: #191919;webkit-filter: drop-shadow(5px 5px 5px #595959);filter: drop-shadow(0px 0px 10px #595959);transition: all 0.2s ease-in-out}
+
+  #Search_CloseButton_Container:active, #IFU_CloseButton_Container:active {background-color: #0a0a0a;webkit-filter: drop-shadow(5px 5px 5px #595959);filter: drop-shadow(0px 0px 10px #595959);transition: all 0.2s ease-in-out}
+
+  #App_Container {width:-webkit-fill-available;}
+
+  #App_Header {height: 50px;}
+
+  #App_Text {resize: none;}
+
+  #App_Contex_BodyContainer, #App_Menu_BodyContainer {backdrop-filter: blur(10px);}
+
+  #App_Contex_Container {width: 280px;height: 352px;position: absolute;inset: auto 36% 29%;}
+
+  #App_Footer_Container, #App_More_Container {height: 43px;}
+
+  #App_Footer_New_ButtonContainer, #App_Footer_Open_ButtonContainer, #App_Footer_Save_ButtonContainer {width: 122px;background-color: #70707000;transition: all 0.2s ease-in-out}
+
+  #App_Footer_URLImport_ButtonContainer {width: 188px;background-color: #70707000;transition: all 0.2s ease-in-out}
+
+  #App_Footer_More_ButtonContainer, #App_Footer_HideMore_ButtonContainer {width: 50px;background-color: #70707000;transition: all 0.2s ease-in-out}
+
+  #App_More_AboutUs_ButtonContainer, #App_More_Github_ButtonContainer{width: 88px;background-color: #383838;transition: all 0.2s ease-in-out}
+
+  #App_Footer_New_ButtonContainer:hover, #App_Footer_Open_ButtonContainer:hover, #App_Footer_URLImport_ButtonContainer:hover, #App_Footer_Save_ButtonContainer:hover, #App_Footer_More_ButtonContainer:hover,#App_Footer_HideMore_ButtonContainer:hover, #App_More_AboutUs_ButtonContainer:hover, #App_More_Github_ButtonContainer:hover {background-color: #454545;transition: all 0.2s ease-in-out}
+
+  #App_Footer_New_ButtonContainer:active, #App_Footer_Open_ButtonContainer:active, #App_Footer_URLImport_ButtonContainer:active, #App_Footer_Save_ButtonContainer:active, #App_Footer_More_ButtonContainer:active,#App_Footer_HideMore_ButtonContainer:active, #App_More_AboutUs_ButtonContainer:active, #App_More_Github_ButtonContainer:active {background-color: #303030;transition: all 0.2s ease-in-out}
+
+  #App_More_HiddenRoom {width: 552px;}
+
+  #App_Menu_Container {border-top-left-radius: 25px;border-bottom-left-radius: 25px;}
